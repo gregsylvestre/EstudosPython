@@ -9,18 +9,19 @@ import time
 level = int(input("Qual nível você gostaria de jogar? 1/2/3/4/5 \n"))
 length = 500 / level
 
-#criação de variavel root
+#criação de variavel e gravado uma tupla com o título, redimensionamento e atributos
 root = Tk()
 root.title("Ping Pong")
 root.resizable(0, 0)
 root.wm_attributes("-topmost", -1)
 
+#criação de variável com as dimensões da tela
 canvas = Canvas(root, width=800, height=600, bd=0, highlightthickness=0)
 canvas.pack()
 
+#atualização da tupla
 root.update()
 
-# Variável
 count = 0
 lost = False
 
