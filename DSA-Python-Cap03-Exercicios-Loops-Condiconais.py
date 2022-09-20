@@ -28,22 +28,50 @@ for i in Seq:
 
 # Exercício 5 - Crie uma variável chamada temperatura e atribua o valor 40. Enquanto temperatura for maior que 35,
 # imprima as temperaturas na tela
+temperatura = 40
+while temperatura > 35:
+    print(temperatura)
+    break
+
 # Exercício 6 - Crie uma variável chamada contador = 0. Enquanto counter for menor que 100, imprima os valores na tela,
 # mas quando for encontrado o valor 23, interrompa a execução do programa
+counter = 0
+while counter < 100:
+    if counter == 23:
+        break
+    else:
+        pass
+    print(counter)
+    counter += 1
+
 # Exercício 7 - Crie uma lista vazia e uma variável com valor 4. Enquanto o valor da variável for menor ou igual a 20,
 # adicione à lista, apenas os valores pares e imprima a lista
+list2 = []
+vl = 4
+while vl <= 20:
+    if vl % 2 == 0:
+        print(vl)
+    vl += 1
+
 # Exercício 8 - Transforme o resultado desta função range em uma lista: range(5, 45, 2)
-#nums = range(5, 45, 2)
+nums = range(5, 45, 2)
+list3 = []
+for l in nums:
+    list3.append(l)
+print(list3)
+
 # Exercício 9 - Faça a correção dos erros no código abaixo e execute o programa. Dica: são 3 erros.
-#temperatura = float(input('Qual a temperatura? '))
-#if temperatura > 30
-#print('Vista roupas leves.')
-#else
-#    print('Busque seus casacos.')
+temperatura = float(input('Qual a temperatura? '))
+if temperatura > 30:
+    print('Vista roupas leves.')
+else:
+    print('Busque seus casacos.')
+
 # Exercício 10 - Faça um programa que conte quantas vezes a letra "r" aparece na frase abaixo. Use um placeholder na
 # sua instrução de impressão
-
-# “É melhor, muito melhor, contentar-se com a realidade; se ela não é tão brilhante como os sonhos, tem pelo menos a
-# vantagem de existir.” (Machado de Assis)
-
-#frase = "É melhor, muito melhor, contentar-se com a realidade; se ela não é tão brilhante como os sonhos, tem pelo menos a vantagem de existir."
+frase = ('“É melhor, muito melhor, contentar-se com a realidade; se ela não é tão brilhante como os sonhos, tem pelo menos a vantagem de existir.” (Machado de Assis)')
+contagem = 0
+for ctn in frase:
+    if ctn == 'r':
+        contagem += 1
+print('Há %r letras R nesta frase.' %(contagem))
